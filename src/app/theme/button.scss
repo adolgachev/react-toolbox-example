@@ -1,0 +1,6 @@
+@import "~react-toolbox/lib/colors";
+@import "~react-toolbox/lib/button/mixins";
+
+@import "~react-toolbox/lib/button/theme";
+
+@include btn-colors("primary", $color-black, $palette-amber-300, rgba($palette-amber-300, .2));

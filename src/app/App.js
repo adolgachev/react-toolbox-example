@@ -10,11 +10,22 @@ const App = () => (
   <div>
     <PurpleAppBar />
     <section style={{ padding: 20 }}>
+
+      <!-- Component variant with overriden styles -->
       <SuccessButton label='Success' primary raised />
+
+      <!-- Component using default theme (from library) -->
       <Button label='Primary Button' primary />
+
+      <!-- Component using own custom theme -->
       <CancelButton label='Cancel' primary raised />
+
+      <!-- Component using default theme but style overriden locally -->
       <Button label='Styled Button' primary style={{ color: 'red' }} />
+
+      <!-- Component imported with no theme but using theme supplied with context -->
       <ThemeableButton label='Themeable Button' primary />
+
     </section>
   </div>
 );
